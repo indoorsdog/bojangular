@@ -5,7 +5,7 @@ angular.module('project', ['mongolab']).
       when('/', {controller:ListCtrl, templateUrl:'list.html'}).
       when('/edit/:projectId', {controller:EditCtrl, templateUrl:'detail.html'}).
       when('/new', {controller:CreateCtrl, templateUrl:'detail.html'}).
-      otherwise({tempalteUrl:'real_404.html'});
+      otherwise({templateUrl:'real_404.html'});
   });
  
  
