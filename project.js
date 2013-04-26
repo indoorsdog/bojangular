@@ -1,7 +1,7 @@
 angular.module('project', ['mongolab']).
-  config(function($routeProvider) {
+  config(function($locationProvider, $routeProvider) {
+    $locationProvider.html5Mode(true);
     $routeProvider.
-      html5Mode(true).
       when('/', {controller:ListCtrl, templateUrl:'list.html'}).
       when('/edit/:projectId', {controller:EditCtrl, templateUrl:'detail.html'}).
       when('/new', {controller:CreateCtrl, templateUrl:'detail.html'}).
